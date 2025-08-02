@@ -43,14 +43,14 @@ public class ShoppingCart {
                     item.getAmount(),
                     item.getUnit(),
                     item.getPrice(),
-                    item.getCurrency(),
+                    Currency.RUB,
                     item.getAmount() * item.getPrice(),
-                    item.getCurrency());
+                    Currency.RUB);
 
             if (item.getDiscount() > 0) {
                 System.out.printf("Скидка: %.2f %s\n",
                         item.getAmount() * item.getPrice() * (100 - item.getDiscount()) / 100,
-                        item.getCurrency());
+                        Currency.RUB);
             }
 
             System.out.println("----------");

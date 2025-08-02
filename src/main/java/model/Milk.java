@@ -5,8 +5,8 @@ import model.constants.Discount;
 public class Milk extends Food {
     private final double fat;
 
-    public Milk(int amount, double price, String name, String currency, String unit, double fat) {
-        super(amount, price, name, currency, unit, false);
+    public Milk(int amount, double price, String name, String unit, double fat) {
+        super(amount, price, name, unit, false);
         this.fat = fat;
     }
 

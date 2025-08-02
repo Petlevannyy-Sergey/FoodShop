@@ -8,16 +8,12 @@ public abstract class Food implements Discountable {
     protected String currency;
     protected String unit;
 
-    public Food(int amount, double price, String name, String currency, String unit, boolean isVegetarian) {
+    public Food(int amount, double price, String name, String unit, boolean isVegetarian) {
         this.amount = amount;
         this.price = price;
         this.name = name;
-        this.currency = currency;
         this.unit = unit;
         this.isVegetarian = isVegetarian;
-    }
-
-    protected Food() {
     }
 
     public int getAmount() {
@@ -38,11 +34,6 @@ public abstract class Food implements Discountable {
     public String getName() {
 
         return name;
-    }
-
-    public String getCurrency() {
-
-        return currency;
     }
 
     public String getUnit() {

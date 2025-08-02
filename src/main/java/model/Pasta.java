@@ -6,8 +6,8 @@ import model.constants.Shape;
 public class Pasta extends Food {
     private final String shape;
 
-    public Pasta(int amount, double price, String name, String currency, String unit, boolean isVegetarian, String shape) {
-        super(amount, price, name, currency, unit, isVegetarian);
+    public Pasta(int amount, double price, String name, String unit, boolean isVegetarian, String shape) {
+        super(amount, price, name, unit, isVegetarian);
         this.shape = shape;
     }
 
