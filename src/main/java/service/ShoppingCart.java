@@ -53,7 +53,7 @@ public class ShoppingCart {
                         Currency.RUB);
             }
 
-            System.out.println("----------");
+            System.out.println("----------------------------");
         }
 
         System.out.printf("Стоимость без скидки: %.2f %s\n",
