@@ -49,7 +49,7 @@ public class ShoppingCart {
 
             if (item.getDiscount() > 0) {
                 System.out.printf("Скидка: %.2f %s\n",
-                        item.getAmount() * item.getPrice() * (100 - item.getDiscount()) / 100,
+                        item.getAmount() * item.getPrice() * item.getDiscount() / 100,
                         Currency.RUB);
             }
 
@@ -59,6 +59,6 @@ public class ShoppingCart {
         System.out.printf("Стоимость без скидки: %.2f %s\n",
                 getTotalPriceWithOutDiscount(), Currency.RUB);
 
-        System.out.printf("Итого: %.2f %s\n",getTotalPriceWithDiscount(), Currency.RUB);
+        System.out.printf("Итого: %.2f %s\n", getTotalPriceWithDiscount(), Currency.RUB);
     }
 }
